@@ -4,19 +4,19 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 
 
-const ExploreButton = () => (
+const GovernateButton = () => (
 
   <Container>
     <Row className="justify-content-center py-2">
       <Button
         variant="primary"
-        href="/zaps"
+        href="/governate"
         className="shadow lift mr-1 my-2 py-3 font20 px-4"
       >
-        Explore
+        Governate
           </Button>
     </Row>
   </Container>
 );
 
-export default ExploreButton;
+export default GovernateButton;

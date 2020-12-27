@@ -20,9 +20,9 @@ const NavigationBar = props => {
               <Button
                 className={styles.anchorSpacing}
                 variant="link"
-                href="/zaps"
+                href="/governate"
               >
-                Explore
+                Governate
               </Button>
             </Navbar.Text> 
           </Nav>
