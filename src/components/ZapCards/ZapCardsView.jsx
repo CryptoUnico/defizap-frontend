@@ -19,7 +19,7 @@ const ZapCardsView = props => {
             <Donut data={props.basketData} />
           </div>
           <div className="text-center justify-content-center">
-            <a href={`/zaps/${id}`}>Learn More</a>
+            <a href={`/governate/${id}`}>Learn More</a>
           </div>
         </Card.Body>
       </Card>

@@ -16,33 +16,6 @@ import { registerEvent } from '../../api/googleAnalytics';
 import BuyButtonContainer from '../BuyButton/BuyButtonContainer';
 import GiftButton from '../GiftButton';
 
-const footerButtons = () => (
-  <div className="row justify-content-center my-1">
-    <div className="col-12 col-md-12 col-lg-12 text-center">
-      <Button variant="outline-info" size="lg" href="/survey" type="link" block>
-        Not sure which to pick? Try Zap Generator
-      </Button>
-      <hr />
-      <Button
-        variant="outline-info"
-        target="_blank"
-        size="lg"
-        href="https://defizap.typeform.com/to/UZSZg5"
-        type="link"
-        block
-        onClick={() =>
-          registerEvent({
-            category: GENERATE_ZAP,
-            action: INDIVIDUAL_ZAP_PAGE
-          })
-        }
-      >
-        Don&apos;t see your Zap? Submit a request and we will create one!
-      </Button>
-    </div>
-  </div>
-);
-
 const Zap = props => {
   const numberWithCommas = x => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -216,7 +189,6 @@ const ZapListView = props => {
         {data.filter(zap => zap.isOrderable).map(zap => Zap(zap))}
       </Row>
       <hr />
-      {footerButtons()}
       <br />
       <br />
     </Container>
