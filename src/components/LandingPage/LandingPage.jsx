@@ -8,7 +8,6 @@ import WhyUseDeFiZap from './WhyUseDeFiZap';
 import AvailableZaps from './AvailableZapsView';
 import ExploreZapsButton from './ExploreZapsButton';
 import Hero from './Hero';
-import Footer from '../Footer';
 
 const LandingPage = () => (
   <>
@@ -17,7 +16,6 @@ const LandingPage = () => (
       <Hero />
       <br /> <br /> <br />
       <WhyUseDeFiZap />
-      <Footer />
       <div className="text-center py-1 mb-2">
         <div className="text-muted">
         </div>
