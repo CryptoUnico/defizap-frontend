@@ -1,4 +1,4 @@
-# DeFiZap Front End
+# Governator Front End
 
 ## Development
 The following code can be run locally by running the following two commands.

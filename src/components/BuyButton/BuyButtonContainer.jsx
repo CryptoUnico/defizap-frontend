@@ -3,10 +3,6 @@ import { Modal, ModalBody } from 'reactstrap';
 import Button from 'react-bootstrap/Button';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
-// import Tooltip from 'react-bootstrap/Tooltip';
-// import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import Row from 'react-bootstrap/Row';
 import Column from 'react-bootstrap/Col';
 import Web3 from 'web3';
@@ -385,7 +381,7 @@ class BuyButtonContainer extends React.Component {
             size={!isEmpty(size) ? size : 'md'}
             block={block}
           >
-            ⚡ Use This Zap
+            ⚡ Governate
           </Button>
         ) : null}
         {this.renderModal()}

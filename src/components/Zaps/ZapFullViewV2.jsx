@@ -5,8 +5,7 @@ import Card from 'react-bootstrap/Card';
 import Badge from 'react-bootstrap/Badge';
 import autobind from 'react-autobind';
 
-// import ReturnSparkLine from '../ReturnSparkline';
-// import PercentageCircle from '../PercentageCircle';
+
 import BuyButtonContainer from '../BuyButton/BuyButtonContainer';
 import GiftButton from '../GiftButton';
 import Donut from '../PercentageDoughnut';

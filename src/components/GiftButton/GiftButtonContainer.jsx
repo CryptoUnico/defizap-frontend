@@ -513,7 +513,7 @@ class GiftButtonContainer extends React.Component {
             size={!isEmpty(size) ? size : 'md'}
             block={block}
           >
-            🎁 Gift This Zap
+            🎁 Governate Gift
           </Button>
         ) : null}
         {this.renderModal()}

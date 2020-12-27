@@ -7,7 +7,7 @@ import SaveTime from '../../assets/save-time.svg';
 import SaveGas from '../../assets/save-gas.svg';
 import NonCustodial from '../../assets/non-custodial.svg';
 
-const WhyUseDeFiZap = () => (
+const WhyUseGovernator = () => (
   <Container>
     <Row className="justify-content-center text-center">
       <Col sm md lg>
@@ -15,8 +15,7 @@ const WhyUseDeFiZap = () => (
         <h5>Save Time</h5>
         <p>
           Governator is a system of smart contracts - Governates - that deploys
-          ETH (and soon DAI) across multiple DeFi protocols in one
-          transaction, saving your time.
+          WETH across multiple DeFi protocols in one transaction, saving your time.
         </p>
       </Col>
       
@@ -42,8 +41,7 @@ const WhyUseDeFiZap = () => (
         <img src={SaveGas} width="120px" alt="Save Time" />
         <h5>Easy Access</h5>
         <p>
-        Governator doesn’t spread ETH across 'top 10 on coinmarketcap' - 
-        Governates inject ETH into financial protocols built on top of Ethereum, 
+        Governating injects ETH into financial protocols built on top of Ethereum, 
         furthering user adoption.
           <br />
         </p>
@@ -52,4 +50,4 @@ const WhyUseDeFiZap = () => (
   </Container>
 );
 
-export default WhyUseDeFiZap;
+export default WhyUseGovernator;

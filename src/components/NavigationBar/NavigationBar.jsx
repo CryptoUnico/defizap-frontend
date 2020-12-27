@@ -22,7 +22,7 @@ const NavigationBar = props => {
                 variant="link"
                 href="/zaps"
               >
-                Explore Zaps
+                Explore
               </Button>
             </Navbar.Text> 
           </Nav>
