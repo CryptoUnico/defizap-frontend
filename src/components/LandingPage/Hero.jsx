@@ -17,7 +17,7 @@ const Hero = () => (
     <Row>
       <Col sm={12} md={6} lg={6}>
         <Row className="pt-5">
-          <h1>DeFiZap</h1>
+          <h1>Governator</h1>
           <h5>
             <sup>Beta</sup>
           </h5>
@@ -38,15 +38,15 @@ const Hero = () => (
                 value: 1
               })}
             variant="primary"
-            href="/survey"
+            href="/zaps"
             className="shadow lift mr-1 my-2 py-3 font20 px-4"
           >
-            Get Started
+            Explore
           </Button>
         </Row>
       </Col>
       <Col sm={8} md={6} lg={6}>
-        <img width="100%" src={heroimg} alt="Welcome to DeFiZap" />
+        <img width="100%" src={heroimg} alt="Welcome to DevicoVentures" />
       </Col>
     </Row>
   </Container>
