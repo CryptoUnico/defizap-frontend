@@ -8,7 +8,6 @@ import { connect } from 'react-redux';
 import './App.css';
 
 import ZapsPage from './components/Zaps';
-import Survey from './components/SurveyPage';
 import ZapListContainer from './components/ZapList/ZapListContainer';
 import LandingPage from './components/LandingPage';
 // import Analytics from './pages/analytics';
