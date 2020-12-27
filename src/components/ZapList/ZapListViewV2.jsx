@@ -8,13 +8,7 @@ import Badge from 'react-bootstrap/Badge';
 import '../../App.css';
 import Donut from '../PercentageDoughnut';
 import NavigationBar from '../NavigationBar';
-import {
-  INDIVIDUAL_ZAP_PAGE,
-  GENERATE_ZAP
-} from '../../constants/googleAnalytics';
-import { registerEvent } from '../../api/googleAnalytics';
 import BuyButtonContainer from '../BuyButton/BuyButtonContainer';
-import GiftButton from '../GiftButton';
 
 const Zap = props => {
   const numberWithCommas = x => {
@@ -30,7 +24,7 @@ const Zap = props => {
           <>
             <h4>This Zap is still under development.</h4>
             <h4>
-              In the meantime, check out available Zaps <a href="/zaps">here</a>
+              In the meantime, check out available Zaps <a href="/governate">here</a>
               .
             </h4>
           </>
@@ -68,32 +62,6 @@ const Zap = props => {
                   {props.oneClickAccessTo.length === 1 ? (
                     <div className="my-3 pb-2" />
                   ) : null}
-                </h6>
-              </span>
-            ) : (
-                ''
-              )}
-            {props.platformsUsed ? (
-              <span>
-                <h6 style={{ fontSize: '0.8em' }}>PLATFORMS USED:</h6>
-                <h6>
-                  {props.platformsUsed.map((platform, index) => (
-                    <a
-                      href={platform.url}
-                      key={platform.value}
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <Badge
-                        style={{ backgroundColor: platform.color }}
-                        variant="success"
-                        // className={index === 0 ? 'beforePill' : 'afterPill'}
-                        className="badgePadding"
-                      >
-                        {platform.value}
-                      </Badge>
-                    </a>
-                  ))}
                 </h6>
               </span>
             ) : (
@@ -150,18 +118,8 @@ const Zap = props => {
           </Col>
         </Row>
       </Col>
-      {props.isOrderable ? (
-        <div className="mt-md-2 mt-2 pb-md-0 pb-3 d-flex justify-content-center">
-          <a style={{ whiteSpace: 'nowrap' }} href={`/zaps/${props.id}`}>
-            Learn More
-          </a>
-        </div>
-      ) : null}
       <Row className="justify-content-center mt-3 mb-2 px-4">
         <BuyButtonContainer {...props} block />
-      </Row>
-      <Row className="justify-content-center mb-4 px-4">
-        <GiftButton {...props} block />
       </Row>
     </Col>
   );
