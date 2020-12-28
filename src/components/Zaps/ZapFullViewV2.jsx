@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import Badge from 'react-bootstrap/Badge';
 import autobind from 'react-autobind';
 
 
@@ -77,14 +76,6 @@ class ZapFullView extends PureComponent {
                           rel="noopener noreferrer"
                           target="_blank"
                         >
-                          <Badge
-                            key={access.text}
-                            style={{ backgroundColor: access.color }}
-                            variant="primary"
-                            className={index === 0 ? 'beforePill' : 'afterPill'}
-                          >
-                            {access.text}
-                          </Badge>
                         </a>
                       </Row>
                     ))}
@@ -102,14 +93,6 @@ class ZapFullView extends PureComponent {
                         rel="noopener noreferrer"
                         target="_blank"
                       >
-                        <Badge
-                          style={{ backgroundColor: platform.color }}
-                          variant="success"
-                          // className={index === 0 ? 'beforePill' : 'afterPill'}
-                          className="badgePadding"
-                        >
-                          {platform.value}
-                        </Badge>
                       </a>
                     ))}
                   </h5>
@@ -204,7 +187,6 @@ class ZapFullView extends PureComponent {
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <Badge variant="info">{ensAddress}</Badge>
                     </a>
                   </h5>
                   <p style={{ fontSize: '0.75em' }}>
