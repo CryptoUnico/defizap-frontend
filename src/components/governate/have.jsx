@@ -7,7 +7,6 @@ import {
   TextField
 } from '@material-ui/core';
 
-import { withNamespaces } from 'react-i18next';
 import { colors } from '../../theme'
 
 import Store from "../../stores";
@@ -207,4 +206,4 @@ class Have extends Component {
   }
 }
 
-export default withNamespaces()(withRouter(withStyles(styles)(Have)));
+export default withRouter(withStyles(styles)(Have));

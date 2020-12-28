@@ -5,7 +5,7 @@ const Zaps = {
     text: 'Uni LINK',
     isOrderable: true,
     hasReturnsChart: true,
-    ensAddress: 'LINKUnipool.DeFiZap.eth',
+    //ensAddress: 'LINKUnipool.DeFiZap.eth',
     illustration: 'unipool_link_illustration.svg',
     tokenAddress: '0xF173214C720f58E03e194085B1DB28B50aCDeeaD',
     tokenInfo: {
@@ -34,7 +34,7 @@ const Zaps = {
       {
         name: 'LINK Pool token',
         percent: 100,
-        color: '#AF2CE4'
+        color: '#0000FF'
       }
     ],
     description: {
@@ -54,19 +54,20 @@ const Zaps = {
         '50% converted to LINK',
         '50% leftover input + acquired tokens are added to the LINK/ETH Liquidity pool on Uniswap. Receive minted liquidity tracking tokens back to your wallet.'
       ]
-    },
-
-    id: 'unipoollink',
+    }
+  },
+  unipoolGDAO: {
+    id: 'unipoolGDAO',
     name: 'GDAO Unipool',
-    text: 'Uni LINK',
+    text: 'Uni GDAO',
     isOrderable: true,
     hasReturnsChart: true,
-    ensAddress: 'LINKUnipool.DeFiZap.eth',
+    //ensAddress: 'GDAOUnipool.Governator.eth',
     illustration: 'unipool_link_illustration.svg',
-    tokenAddress: '0xF173214C720f58E03e194085B1DB28B50aCDeeaD',
+    tokenAddress: '0x4D184bf6F805Ee839517164D301f0C4e5d25c374',
     tokenInfo: {
-      address: '0x514910771AF9Ca656af840dff83E8264EcF986CA',
-      name: 'LINK',
+      address: '0x515d7E9D75E2b76DB60F8a051Cd890eBa23286Bc',
+      name: 'GDAO',
       decimals: 18
       // icon: 'dai_logo.svg'
     },
@@ -88,7 +89,7 @@ const Zaps = {
     whatHappensAfter: '',
     components: [
       {
-        name: 'LINK Pool token',
+        name: 'GDAO Pool token',
         percent: 100,
         color: '#AF2CE4'
       }
@@ -107,12 +108,13 @@ const Zaps = {
     },
     whatThisMeans: {
       text: [
-        '50% converted to LINK',
-        '50% leftover input + acquired tokens are added to the LINK/ETH Liquidity pool on Uniswap. Receive minted liquidity tracking tokens back to your wallet.'
+        '50% converted to GDAO',
+        '50% leftover input + acquired tokens are added to the GDAO/ETH Liquidity pool on Uniswap. Receive minted liquidity tracking tokens back to your wallet.'
       ]
     },
 
   }
+
 };
 
 export default Zaps;

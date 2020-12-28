@@ -138,11 +138,6 @@ class BuyButtonContainer extends React.Component {
             5,
             false
           );
-        } else if (this.props.name === '2x LINK LLP') {
-          tx = await contract.methods.LetsInvest(
-            window.web3.currentProvider.selectedAddress,
-            34
-          );
         } else if (this.props.name === 'DAI Unipool' || 'MKR Unipool' || 'SNX Unipool' || 'sETH Unipool') {
           tx = await contract.methods.LetsInvest();
         } else {

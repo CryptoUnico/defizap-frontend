@@ -9,7 +9,6 @@ import {
 } from '@material-ui/core';
 import { colors } from '../../theme'
 
-import { withNamespaces } from 'react-i18next';
 // import {
 //   BALANCES_RETURNED
 // } from '../../constants'
@@ -147,4 +146,4 @@ class Sending extends Component {
   }
 }
 
-export default withNamespaces()(withRouter(withStyles(styles)(Sending)));
+export default withRouter(withStyles(styles)(Sending));

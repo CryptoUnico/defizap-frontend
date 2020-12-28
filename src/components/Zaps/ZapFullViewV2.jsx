@@ -7,7 +7,6 @@ import autobind from 'react-autobind';
 
 
 import BuyButtonContainer from '../BuyButton/BuyButtonContainer';
-import GiftButton from '../GiftButton';
 import Donut from '../PercentageDoughnut';
 import '../../App.css';
 
@@ -52,12 +51,6 @@ class ZapFullView extends PureComponent {
               <BuyButtonContainer {...this.props} size="md" />
             </Col>
           </Row>
-          <Row className="justify-content-center mb-4 px-4">
-            <Col xs={12} md={6} className="justify-content-center text-center">
-              <GiftButton {...this.props} size="md" />
-            </Col>
-          </Row>
-
           <Row className="justify-content-center align-text-center">
             <Col xs={12} md={6} className="justify-content-center text-center">
               {oneClickAccessTo ? (
