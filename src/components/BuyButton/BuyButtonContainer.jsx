@@ -109,17 +109,6 @@ class BuyButtonContainer extends React.Component {
             5
           );
         } else if (
-          this.props.name === 'ETH Bull' ||
-          this.props.name === 'Double Bull' ||
-          this.props.name === 'Super Saver' ||
-          this.props.name === 'Moderate Bull'
-        ) {
-          tx = await contract.methods.LetsInvest(
-            window.web3.currentProvider.selectedAddress,
-            50,
-            5
-          );
-        } else if (
           this.props.name === 'CHAI Unipool' ||
           this.props.name === 'cDAI Unipool'
         ) {
@@ -270,20 +259,6 @@ class BuyButtonContainer extends React.Component {
                 />
               ) : null}
               {/* <div className='justify-content-center pl-4'>Slippage</div> */}
-              {/* {hasReturnsChart ? 
-              <Row className="justify-content-center pe-4 pt-2">
-                <div className='justify-content-center pl-4'>
-                  Slippage{' '}
-                  <OverlayTrigger
-                    overlay={<Tooltip>Our zaps are designed to reject any transaction that registers over 5% slippage. We do not control the slippage that eventually gets executed (under 5%) on UniSwap.</Tooltip>}
-                    placement="right"
-                  >
-                    <FontAwesomeIcon icon={faQuestionCircle} />
-
-                  </OverlayTrigger>
-                </div>
-              </Row>
-              : null} */}
               {paused ? null : (
 <div>
                   <Row className="justify-content-center py-3">
@@ -378,7 +353,7 @@ class BuyButtonContainer extends React.Component {
             }}
             disabled={!isOrderable}
             // variant="outline-primary"
-            size={!isEmpty(size) ? size : 'md'}
+            size={!isEmpty(size) ? size : 'lg'}
             block={block}
           >
             ⚡ Governate

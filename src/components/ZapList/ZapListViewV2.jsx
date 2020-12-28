@@ -31,42 +31,6 @@ const Zap = props => {
         )}
         <Row className="text-center pt-2">
           <Col className="text-sm-center">
-            {props.oneClickAccessTo ? (
-              <span>
-                <h6 style={{ fontSize: '0.8em' }}>1-CLICK ACCESS TO:</h6>
-                <h6>
-                  {props.oneClickAccessTo.map((access, index) => (
-                    <Row key={access.text} className="justify-content-center">
-                      <a
-                        href={
-                          access.url
-                            ? access.url
-                            : props.hasReturnsChart
-                              ? `https://pools.fyi/#/returns/${props.tokenAddress}`
-                              : null
-                        }
-                        key={access.text}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        <Badge
-                          style={{ backgroundColor: access.color }}
-                          variant="primary"
-                          className={index === 0 ? 'beforePill' : 'afterPill'}
-                        >
-                          {access.text}
-                        </Badge>
-                      </a>
-                    </Row>
-                  ))}
-                  {props.oneClickAccessTo.length === 1 ? (
-                    <div className="my-3 pb-2" />
-                  ) : null}
-                </h6>
-              </span>
-            ) : (
-                ''
-              )}
             {props.metamaskInteractionsSaved ? (
               <span>
                 <h6 style={{ fontSize: '0.8em' }}>
