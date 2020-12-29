@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import NavigationBar from '../NavigationBar';
 import WhyUseGovernator from './WhyUseGovernator';
 import Hero from './Hero';
-import Zap from './zap';
 
 const LandingPage = () => (
   <>
@@ -14,7 +13,6 @@ const LandingPage = () => (
       <br /> <br /> <br />
       <WhyUseGovernator />
       <br /> <br /> <br />
-      <Zap />
       <div className="text-center py-1 mb-2">
         <div className="text-muted">
         </div>

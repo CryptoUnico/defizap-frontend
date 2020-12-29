@@ -26,10 +26,10 @@ const Hero = () => (
         <Row>
           <Button
             variant="primary"
-            href="/zaps"
+            href="/apps"
             className="shadow lift mr-1 my-2 py-3 font20 px-4"
           >
-            Governate
+            Apps
           </Button>
         </Row>
       </Col>

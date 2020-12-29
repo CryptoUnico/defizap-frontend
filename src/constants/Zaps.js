@@ -5,9 +5,10 @@ const Zaps = {
     text: 'Uni LINK',
     isOrderable: true,
     hasReturnsChart: true,
-    //ensAddress: 'LINKUnipool.DeFiZap.eth',
+    ensAddress: 'governordao.eth',
     illustration: 'unipool_link_illustration.svg',
     tokenAddress: '0xF173214C720f58E03e194085B1DB28B50aCDeeaD',
+    //tokenAddress: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
     tokenInfo: {
       address: '0x514910771AF9Ca656af840dff83E8264EcF986CA',
       name: 'LINK',
@@ -38,7 +39,7 @@ const Zaps = {
       }
     ],
     description: {
-      textQuestion: 'What does this Zap do?',
+      textQuestion: 'What does this do?',
       textAnswer: ['Sample text'],
       textLink: [
         {
@@ -62,7 +63,7 @@ const Zaps = {
     text: 'Uni GDAO',
     isOrderable: true,
     hasReturnsChart: true,
-    //ensAddress: 'GDAOUnipool.Governator.eth',
+    ensAddress: 'c',
     illustration: 'unipool_link_illustration.svg',
     tokenAddress: '0x4D184bf6F805Ee839517164D301f0C4e5d25c374',
     tokenInfo: {

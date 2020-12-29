@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import Zaps from '../../constants/Zaps';
-import ZapCardsView from '../ZapCards/ZapCardsView';
+import ZapCardsView from '../ZapCards';
 
 const calculateNumberOfSlides = () => {
   if (window.innerWidth < 800) return 1;

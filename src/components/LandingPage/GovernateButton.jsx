@@ -13,7 +13,7 @@ const GovernateButton = () => (
         href="/zaps"
         className="shadow lift mr-1 my-2 py-3 font20 px-4"
       >
-        Governate
+        Governator
           </Button>
     </Row>
   </Container>

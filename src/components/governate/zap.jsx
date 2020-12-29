@@ -31,7 +31,7 @@ import {
   TRADE_RETURNED,
   GET_BEST_PRICE,
   GET_BEST_PRICE_RETURNED
-} from '../../constants'
+} from './constants'
 
 import { withNamespaces } from 'react-i18next';
 import Store from "../../stores";

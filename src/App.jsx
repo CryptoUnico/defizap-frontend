@@ -33,10 +33,7 @@ class App extends PureComponent {
       <Router history={history}>
         <Switch>
           <Route exact path="/" component={LandingPage} />
-          {/* <Route exact path="/dashboard" component={Dashboard} />
-          <Route exact path="/analytics" component={Analytics} /> */}
-          <Route exact path="/zaps" component={ZapListContainer} />
-          <Route exact path="/zaps/:id" component={ZapsPage} />
+          <Route exact path="/apps" component={ZapListContainer} />
         </Switch>
       </Router>
     );
